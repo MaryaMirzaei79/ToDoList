@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c0e3d86-62be-4ccc-984f-634c1ba3b0bb" name="Changes" comment="this is 6/14/2024 11:24 commited codes" />
+    <list default="true" id="8c0e3d86-62be-4ccc-984f-634c1ba3b0bb" name="Changes" comment="this is 6/14/2024 11:24 commited codes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myTest/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myTest/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718180410814</updated>
       <workItem from="1718180417530" duration="7022000" />
-      <workItem from="1718264318346" duration="9706000" />
+      <workItem from="1718264318346" duration="10631000" />
     </task>
     <task id="LOCAL-00001" summary="this is 6/14/2024 11:24 commited codes">
       <created>1718351687212</created>
