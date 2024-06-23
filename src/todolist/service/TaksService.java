@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class TaksService {
-    private static List<Task> tasks = new ArrayList<>();
+    public static List<Task> tasks = new ArrayList<>();
 
     public static void add_tasks(Scanner scanner) {
 //        System.out.println("Enter taskName,taskStatus");
@@ -51,7 +51,7 @@ public class TaksService {
         System.out.println("Type your task number: ");
         int index = scanner.nextInt();
         scanner.nextLine();
-        if (index < 0 || index > tasks.size()) {
+        if (index <= 0 || index > tasks.size()) {
             System.out.println("invalid task number");
         } else {
             System.out.println("Type your new taskName");
