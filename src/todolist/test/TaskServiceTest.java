@@ -15,10 +15,10 @@ public class TaskServiceTest {
     }
 
     @Test
-    public void testAdd_tasks() {
+    public void testAddTasks() {
         String input = "T1Test\n";
         Scanner scanner = new Scanner(input);
-        TaksService.add_tasks(scanner);
+        TaksService.addTasks(scanner);
         assertEquals(1, TaksService.tasks.size());
         assertEquals("T1Test", TaksService.tasks.get(0).getTaskName());
         assertFalse(TaksService.tasks.get(0).isTaskStatus());
@@ -26,61 +26,61 @@ public class TaskServiceTest {
 
 
     @Test
-    public void testDelete_tasks() {
+    public void testDeleteTasks() {
         String input1 = "T1";
         Scanner scanner1 = new Scanner(input1);
-        TaksService.add_tasks(scanner1);
+        TaksService.addTasks(scanner1);
         String input2 = "1\n";
         Scanner scanner2 = new Scanner(input2);
-        TaksService.delete_tasks(scanner2);
+        TaksService.deleteTasks(scanner2);
         assertEquals(0, TaksService.tasks.size());
     }
 
 
     @Test
-    public void testShow_tasks() {
+    public void testShowTasks() {
         String input1 = "T1";
         Scanner scanner1 = new Scanner(input1);
-        TaksService.add_tasks(scanner1);
+        TaksService.addTasks(scanner1);
         String input2 = "T2";
         Scanner scanner2 = new Scanner(input2);
-        TaksService.add_tasks(scanner2);
-        TaksService.show_tasks();
+        TaksService.addTasks(scanner2);
+        TaksService.showTasks();
     }
 
     @Test
-    public void testUpdate_tasks() {
+    public void testUpdateTasks() {
         String input1 = "T1";
         Scanner scanner1 = new Scanner(input1);
-        TaksService.add_tasks(scanner1);
+        TaksService.addTasks(scanner1);
         String input2 = "1\nT11\ntrue\n";
         Scanner scanner2 = new Scanner(input2);
-        TaksService.update_tasks(scanner2);
+        TaksService.updateTasks(scanner2);
         assertEquals("T11", TaksService.tasks.get(0).getTaskName());
         assertTrue(TaksService.tasks.get(0).isTaskStatus());
     }
 
     @Test
-    public void testIvnalid_add_tasks() {
+    public void testIvnalidAddTasks() {
         String input = "\n";
         Scanner scanner = new Scanner(input);
-        TaksService.add_tasks(scanner);
+        TaksService.addTasks(scanner);
         assertEquals(0, TaksService.tasks.size());
     }
 
     @Test
-    public void testInvalid_delete_tasks() {
+    public void testInvalidDeleteTasks() {
         String input = "1\n"; //deleting from empty list
         Scanner scanner = new Scanner(input);
-        TaksService.delete_tasks(scanner);
+        TaksService.deleteTasks(scanner);
         assertEquals(0, TaksService.tasks.size());
     }
 
     @Test
-    public void testUpdate_invalid_tasks() {
+    public void testUpdateInvalidTasks() {
         String input = "1\nT100\ntrue\n"; //updating non-existing task
         Scanner scanner = new Scanner(input);
-        TaksService.update_tasks(scanner);
+        TaksService.updateTasks(scanner);
         assertEquals(0, TaksService.tasks.size());
     }
 }
