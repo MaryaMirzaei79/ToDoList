@@ -24,19 +24,19 @@ public class Main {
             switch (input) {
 
                 case "ADD":
-                    addTasks(scanner);
-                    showTasks();
+                    add_tasks(scanner);
+                    show_tasks();
                     break;
                 case "REMOVE":
-                    deleteTasks(scanner);
-                    showTasks();
+                    delete_tasks(scanner);
+                    show_tasks();
                     break;
                 case "UPDATE":
-                    updateTasks(scanner);
-                    showTasks();
+                    update_tasks(scanner);
+                    show_tasks();
                     break;
                 case "SHOW TASKS":
-                    showTasks();
+                    show_tasks();
                     break;
                 case "EXIT":
                     programIsUp = false;
